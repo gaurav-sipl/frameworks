@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/core.css" rel="stylesheet" type="text/css">
+	<link href="css/components.css" rel="stylesheet" type="text/css">
+	<link href="css/colors.css" rel="stylesheet" type="text/css">
+	<link href="css/custom.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	
+	
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+
+	<script type="text/javascript" src="js/site.js"></script>
+	<script type="text/javascript" src="assets/js/charts/d3/bars/bars_basic_vertical.js"></script>
+	<script type="text/javascript" src="assets/js/charts/d3/bars/bars_basic_horizontal.js"></script>
+
+	<!-- /core JS files -->
+
+
+	
+	<!-- /theme JS files -->
+</head>
+
+<body class="navbar-bottom">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li>
+					<a class="sidebar-control sidebar-main-toggle hidden-xs">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+			
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="images/profile.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="profile-edit.html"><i class="icon-pencil5"></i> <span>Edit profile</span></a></li>
+						<li><a href="login.html"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="breadcrumb-line">
+			<ul class="breadcrumb">
+				<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+			</ul>
+
+		</div>
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main sidebar-default">
+				<div class="sidebar-content">
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="sidebar-user-material">
+							<div class="category-content">
+								<div class="sidebar-user-material-content">
+									<a href="#"><img src="images/profile.jpg" class="img-circle img-responsive" alt=""></a>
+									<h6>Victoria Baker</h6>
+									<span class="text-size-small">Santa Ana, CA</span>
+								</div>
+															
+								
+							</div>
+							
+						</div>
+
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+								<li>
+									<a href="#"><i class="icon-stack2"></i> <span>User</span></a>
+									<ul>
+										<li><a href="user-listing.html">User Listing</a></li>
+										<li><a href="add-user.html">Add User</a></li>
+										
+									</ul>
+								</li>
+								<li><a href="components.html"><i class="icon-list-unordered"></i> <span>Components</span></a></li>
+								<li><a href="error_404.html"><i class="icon-unlink2"></i> <span>404 Error</span></a></li>
+								<!-- /main -->
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+			<!-- Vertical bar chart -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Vertical bar chart</h5>
+						
+					</div>
+
+					<div class="panel-body">
+						<p class="content-group">Example of simple <code>vertical</code> bar chart based on <code>D3.js</code> library. This simple bar chart is constructed from a TSV file storing the demo data. The chart employs conventional margins and a number of D3 features: <code>d3.tsv</code> - load and parse data; <code>d3.format</code> - format percentages; <code>d3.scale.ordinal</code> - x-position encoding; <code>d3.scale.linear</code> - y-position encoding; <code>d3.max</code> - compute domains; <code>d3.svg.axis</code> - display axes.</p>
+
+						<div class="chart-container">
+							<div class="chart" id="d3-bar-vertical"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /vertical bar chart -->
+
+				<!-- Horizontal bar chart -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Horizontal bar chart</h5>
+						
+					</div>
+
+					<div class="panel-body">
+						<p class="content-group">Example of simple <code>horizontal</code> bar chart based on <code>D3.js</code> library. This simple bar chart is constructed from a TSV file storing the demo data. The chart employs conventional margins and a number of D3 features: <code>d3.tsv</code> - load and parse data; <code>d3.format</code> - format percentages; <code>d3.scale.ordinal</code> - x-position encoding; <code>d3.scale.linear</code> - y-position encoding; <code>d3.max</code> - compute domains; <code>d3.svg.axis</code> - display axes.</p>
+
+						<div class="chart-container">
+							<div class="chart" id="d3-bar-horizontal"></div>
+						</div>
+					</div>
+				</div>
+				<!-- /horizontal bar chart -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+	<!-- Footer -->
+	<div class="navbar navbar-default navbar-fixed-bottom footer">
+		<ul class="nav navbar-nav visible-xs-block">
+			<li><a class="text-center collapsed" data-toggle="collapse" data-target="#footer"><i class="icon-circle-up2"></i></a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse" id="footer">
+			<div class="navbar-text text-center">
+				<strong>Company Name</strong> - 2015 Copyright
+			</div>
+		</div>
+	</div>
+	<!-- /footer -->
+
+</body>
+</html>
