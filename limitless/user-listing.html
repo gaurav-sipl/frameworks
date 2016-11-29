@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+        <!-- Global stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" /> -->
+        <link href="icomoon/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/core.css" rel="stylesheet" type="text/css">
+        <link href="css/components.css" rel="stylesheet" type="text/css">
+        <link href="css/colors.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+        <!-- /global stylesheets -->
+        <!-- Core JS files -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+        <!-- /core JS files -->
+        <!-- Theme JS files -->
+        <script type="text/javascript" src="js/site.js"></script>
+        <!-- /theme JS files -->
+    </head>
+    <body class="navbar-bottom">
+        <!-- Main navbar -->
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="images/logo_light.png" alt=""></a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="sidebar-control sidebar-main-toggle hidden-xs">
+                            <i class="icon-paragraph-justify3"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="images/profile.jpg" alt="">
+                            <span>Victoria</span>
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="profile-edit.html"><i class="icon-pencil5"></i> <span>Edit profile</span></a></li>
+                            <li><a href="login.html"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /main navbar -->
+        <!-- Page header -->
+        <div class="page-header">
+            <div class="breadcrumb-line">
+                <ul class="breadcrumb">
+                    <li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+                    <li class="active">Users Listing</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /page header -->
+        <!-- Page container -->
+        <div class="page-container">
+            <!-- Page content -->
+            <div class="page-content">
+                <!-- Main sidebar -->
+                <div class="sidebar sidebar-main sidebar-default">
+                    <div class="sidebar-content">
+                        <!-- Main navigation -->
+                        <div class="sidebar-category sidebar-category-visible">
+                            <div class="sidebar-user-material">
+                                <div class="category-content">
+                                    <div class="sidebar-user-material-content">
+                                        <a href="#"><img src="images/profile.jpg" class="img-circle img-responsive" alt=""></a>
+                                        <h6>Victoria Baker</h6>
+                                        <span class="text-size-small">Santa Ana, CA</span>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="category-content no-padding">
+                                <ul class="navigation navigation-main navigation-accordion">
+                                    <!-- Main -->
+                                    <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+                                    <li><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                                    <li>
+                                        <a href="#"><i class="icon-stack2"></i> <span>User</span></a>
+                                        <ul>
+                                            <li class="active"><a href="user-listing.html">User Listing</a></li>
+                                            <li><a href="add-user.html">Add User</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="components.html"><i class="icon-list-unordered"></i> <span>Components</span></a></li>
+                                    <li><a href="error_404.html"><i class="icon-unlink2"></i> <span>404 Error</span></a></li>
+                                    <!-- /main -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /main navigation -->
+                    </div>
+                </div>
+                <!-- /main sidebar -->
+                <!-- Main content -->
+                <div class="content-wrapper">
+                    
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">User Table <a href="add-user.html" class="btn btn-xs btn-primary pull-right">Add New User <i class="icon-arrow-right14 position-right"></i></a></h5>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table cellpadding="0" class="table datatable-show-all table-striped table-bordered" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Street Address</th>
+                                            <th>City</th>
+                                            <th>Country</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Abraham</td>
+                                            <td class="text-right">076 9477 4896</td>
+                                            <td>294-318 Duis Ave</td>
+                                            <td>Vosselaar</td>
+                                            <td>Belgium</td>
+                                            <td>
+                                                <div class="input-group-btn">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <li><a class="dropdown-item" href="useredit-form.html" title="Edit"><i class="icon-pencil5"></i> Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item btn-delete" title="Delete"><i class="icon-bin"></i>  Delete</a></li>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phelan</td>
+                                            <td class="text-right">0500 034548</td>
+                                            <td>680-1097 Mi Rd.</td>
+                                            <td>Lavoir</td>
+                                            <td>Pakistan</td>
+                                            <td>
+                                                <div class="input-group-btn">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                       <li><a class="dropdown-item" href="useredit-form.html" title="Edit"><i class="icon-pencil5"></i> Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item btn-delete" title="Delete"><i class="icon-bin"></i>  Delete</a></li>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Raya</td>
+                                            <td class="text-right">(01315) 27698</td>
+                                            <td>Ap #289-8161 In Avenue</td>
+                                            <td>Santomenna</td>
+                                            <td>Burkina Faso</td>
+                                            <td>
+                                                <div class="input-group-btn">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <li><a class="dropdown-item" href="useredit-form.html" title="Edit"><i class="icon-pencil5"></i> Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item btn-delete" title="Delete"><i class="icon-bin"></i>  Delete</a></li>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Azalia</td>
+                                            <td class="text-right">0500 854198</td>
+                                            <td>226-4861 Augue. St.</td>
+                                            <td>Newtown</td>
+                                            <td>Christmas Island</td>
+                                            <td>
+                                                <div class="input-group-btn">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="dropdown-item" href="useredit-form.html" title="Edit"><i class="icon-pencil5"></i> Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item btn-delete" title="Delete"><i class="icon-bin"></i>  Delete</a></li>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garth</td>
+                                            <td class="text-right">(01662) 59083</td>
+                                            <td>3219 Elit Avenue</td>
+                                            <td>Ternitz</td>
+                                            <td>Saint Martin</td>
+                                            <td>
+                                                <div class="input-group-btn">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="dropdown-item" href="useredit-form.html" title="Edit"><i class="icon-pencil5"></i> Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item btn-delete" title="Delete"><i class="icon-bin"></i>  Delete</a></li>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Selma</td>
+                                            <td class="text-right">0877 118 6905</td>
+                                            <td>P.O. Box 410, 7331 Nec, St.</td>
+                                            <td>Glenrothes</td>
+                                            <td>Korea, North</td>
+                                            <td>
+                                                <div class="input-group-btn">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="dropdown-item" href="useredit-form.html" title="Edit"><i class="icon-pencil5"></i> Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item btn-delete" title="Delete"><i class="icon-bin"></i>  Delete</a></li>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div><!--/penal-body-->
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+    </div>
+    <!-- /page container -->
+    <!-- Footer -->
+    <div class="navbar navbar-default navbar-fixed-bottom footer">
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#footer"><i class="icon-circle-up2"></i></a></li>
+        </ul>
+        <div class="navbar-collapse collapse" id="footer">
+           <div class="navbar-text text-center">
+                <strong>Company Name</strong> - 2015 Copyright
+            </div>
+        </div>
+    </div>
+    <!-- /footer -->
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/pages/datatables_advanced.js"></script>
+    <script type="text/javascript">
+
+    /*Code for deleting row*/
+    $(".datatable-show-all").on('click', '.btn-delete', function () {
+    $(this).parent().parent().parent().closest('tr').remove();
+    });
+    
+    </script>
+</body>
+</html>

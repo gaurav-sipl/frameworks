@@ -1,0 +1,26 @@
+/*
+***********User Grid CSS*******************/
+table.dataTable.no-footer { border-bottom: none; }
+.dropdown-item { display: block; width: 100%; padding: 3px 1.5rem; clear: both; font-weight: 400; color: #373a3c; text-align: inherit; white-space: nowrap; background: 0 0; border: 0; }
+.table-responsive{overflow: inherit;}
+.center-block{float: none;}
+.page-header{margin-bottom: 20px;}
+
+.panel-title a.btn{color:#fff;}
+
+.navbar-brand > img{height: 25px;}
+.navbar-brand{padding: 12px 20px;}
+.navbar-header {min-width: 213px;}
+.sidebar-user-material-content > a {border-radius: 50%;}
+.navbar-text{float: none;}
+.parsley-errors-list{ margin:5px 0 0; color: #ff0000;}
+
+/*.table-bordered.table>thead>tr>th{background-color:#eaeaea;text-align:center;vertical-align:middle;font-size:12px;padding:5px 15px 5px 5px;}
+.table-bordered.table > tbody > tr > td{padding:5px 15px 5px 5px;}*/
+.table-bordered.table>thead>tr>th{background-color:#eaeaea; padding-top: 8px; padding-bottom: 8px; text-align: center;}
+.table-bordered.table>thead>tr>td{padding-top:7px; padding-bottom:7px;}
+.table > tbody > tr > td .input-group-btn{ display: table; margin: auto;}
+.table > tbody > tr > td .dropdown-menu-right {right: 0; left: auto; min-width: 120px;}
+.table > tbody > tr > td .dropdown-menu-right a i{  float: left; font-size: 14px; margin-right: 10px; margin-top: 3px;}
+/*.table > tbody > tr > td .dropdown-menu-right a:last-child{padding-top: 8px; margin-top: 5px; border-top: solid 1px #ebebeb;}*/
+
